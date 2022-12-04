@@ -43,5 +43,21 @@ public class Main {
                 } else System.out.println(year + " год является високосным");
             } else System.out.println(year + " год не является високосным");
         }
+
+        //Задание 4:
+        {
+            System.out.println("\nЗадание 4:");
+            int deliveryDistance = 415;
+            int daysForDelivery = 1;
+            if (deliveryDistance < 20) {
+                System.out.println("Потребуется дней: "+daysForDelivery);
+            } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+                daysForDelivery = daysForDelivery + 1;
+                System.out.println("Потребуется дней: "+daysForDelivery);
+            } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+                daysForDelivery = daysForDelivery + 2;
+                System.out.println("Потребуется дней: "+daysForDelivery);
+            } else System.out.println("Расстояние для доставки слишком большое :(");
+        }
     }
 }
