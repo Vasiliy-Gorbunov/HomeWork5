@@ -29,5 +29,19 @@ public class Main {
                 System.out.println("Установите облегчённую версию приложения для Android по ссылке");
             }
         }
+
+        //Задание 3
+        {
+            System.out.println("\nЗадание 3:");
+            int year = 400;
+            boolean every4Years = year % 4 == 0;
+            boolean every100Years = year % 100 == 0;
+            boolean every400Years = year % 400 == 0;
+            if (every4Years) {
+                if (every100Years && !every400Years) {
+                    System.out.println(year + " год не является високосным");
+                } else System.out.println(year + " год является високосным");
+            } else System.out.println(year + " год не является високосным");
+        }
     }
 }
